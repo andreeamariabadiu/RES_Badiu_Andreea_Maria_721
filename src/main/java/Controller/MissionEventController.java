@@ -15,7 +15,7 @@ public class MissionEventController {
         missionEventService.getAllEvents().forEach(System.out::println);
     }
 
-    public void showRiskScore() {
+    public void showComputedPoints() {
         missionEventService.getAllEvents().stream()
                 .limit(5)
                 .forEach(e -> {;
